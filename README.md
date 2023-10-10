@@ -10,9 +10,16 @@
 
 1. Clone this repository
 
-2. Open this repository with Visual Studio Code
+2. Create conda envs/pkgs directory in local (optional)
 
-3. Run `Remote-Containers: Reopen in Container` command
+```bash
+mkdir -p ~/conda_docker/pkgs
+mkdir -p ~/conda_docker/envs
+```
+
+3. Open this repository with Visual Studio Code
+
+4. Run `Remote-Containers: Reopen in Container` command
 
 ### Running experiments via SSH/tmux
 
