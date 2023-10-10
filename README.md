@@ -23,11 +23,14 @@ Use `tmux` to run experiments via SSH.
 $ tmux 
 
 # Start Devcontainer
-$ devcontainer up
+$ devcontainer up --workspace-folder .
 
 # Attach to the running Devcontainer
-$ devcontainer exec bash
+$ devcontainer exec --container-id <id> bash
 
 # Run an experiment
 $ python3 my-experiment.py
+
+# Stop Devcontainer
+$ docker rm -f <id>
 ```
