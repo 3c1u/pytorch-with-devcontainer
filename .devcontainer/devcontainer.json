@@ -1,0 +1,21 @@
+{
+  "name": "pytorch",
+  "dockerComposeFile": "./docker-compose.yaml",
+  "service": "pytorch",
+  "workspaceFolder": "/workspace",
+  "overrideCommand": true,
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "lfs.vscode-emacs-friendly",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "GitHub.copilot",
+        "VisualStudioExptTeam.vscodeintellicode",
+        "MS-CEINTL.vscode-language-pack-ja",
+        "EditorConfig.EditorConfig"
+      ]
+    }
+  }
+}

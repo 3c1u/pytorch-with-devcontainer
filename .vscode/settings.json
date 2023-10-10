@@ -1,0 +1,7 @@
+{
+  "dev.containers.defaultExtensions": [
+    "ms-python.python",
+    "ms-toolsai.jupyter",
+    "lfs.vscode-emacs-friendly"
+  ]
+}

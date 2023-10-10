@@ -1,0 +1,17 @@
+services:
+  pytorch:
+    build:
+      context: ..
+      dockerfile: ./.devcontainer/Dockerfile
+    container_name: pytorch
+    volumes:
+      - ../:/workspace:cached
+      - ~/conda_docker/envs:/opt/conda/envs:cached
+      - ~/conda_docker/pkgs:/opt/conda/pkgs:cached
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
